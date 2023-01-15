@@ -1,0 +1,7 @@
+{
+  "dependencias" : {
+    "console-handler" : " ^1.1.1 " ,
+    "mangosta" : " ^6.8.1 " ,
+    "solicitud" : " ^1.3.0 "
+  }
+}
