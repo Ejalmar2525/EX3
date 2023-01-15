@@ -1,0 +1,37 @@
+3 Puntos de Extension - Martes 3
+
+E1: Solo en el codigo
+
+Handler h = Handler.ParseForms(somePathToFormsFile).Build();
+
+h.registerPromptHandler( (fieldDefinition) => (fieldDefinition.required? fieldDefinition.name.toUpper(), Color.Blue) );
+h.registerParserFor("newStudent.age", rawValue => (int.Parse(rawValue), false))
+
+return h.run();
+
+
+----------- helper code / actions implementations
+
+function SaveStudent(formData) { ... }
+
+
+
+{ field: { "name": "Nombre completo", type: "string", required: ...., textColor: "Blue" } }
+
+$ Nombre completo:
+$ Nombre completo *:
+
+$ Nombre completo:
+$ NOMBRE COMPLETO:
+
+
+
+---- Cliente
+Customer
+
+JSON.net (Newtonsoft) System.Text.Json (.net core+)
+
+Customer newCust = handler.GetAnswer<Customer>();
+
+-- Libreria --> JSON.net
+Handler....GetAnswer() : FormData
